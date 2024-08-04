@@ -34,7 +34,6 @@ modules:
       
   - type: bling
     install:
-      - laptop
       - ublue-update
 
   - type: rpm-ostree
@@ -50,6 +49,7 @@ modules:
       - wl-clipboard
       - eza
       - opendoas
+      - tuned
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
