@@ -56,10 +56,13 @@ modules:
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
   - type: default-flatpaks
-    user:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+    configurations:
+    - notify: false
+      scope: user
+      repo:
+        url: https://dl.flathub.org/repo/flathub.flatpakrepo
+        name: flathub
+        title: "Flathub" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
       - org.mozilla.firefox # Firefox
       - org.libreoffice.LibreOffice # LibreOffice
