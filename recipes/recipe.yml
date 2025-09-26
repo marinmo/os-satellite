@@ -46,12 +46,15 @@ modules:
       - keychain
       - tmux
       - virt-manager
+      - libvirt-daemon
       - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
+      - libvirt-daemon-driver-interface
+      - libvirt-daemon-driver-network
+      - libvirt-daemon-driver-nwfilter
+      - libvirt-daemon-driver-qemu
+      - libvirt-daemon-driver-secret
+      - libvirt-daemon-driver-storage-core
       - qemu-kvm
-      - virt-viewer
-      - guestfs-tools
-      - python3-libguestfs
       - weechat
       - wl-clipboard
       - eza
