@@ -46,6 +46,7 @@ modules:
       - keychain
       - tmux
       - virt-manager
+      - virt-install
       - libvirt-daemon
       - libvirt-daemon-config-network
       - libvirt-daemon-driver-interface
