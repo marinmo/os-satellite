@@ -47,7 +47,11 @@ modules:
       - tmux
       - virt-manager
       - virt-install
+      - virt-top
+      - virt-viewer
+      - libvirt
       - libvirt-daemon
+      - libvirt-daemon-kvm
       - libvirt-daemon-config-network
       - libvirt-daemon-driver-interface
       - libvirt-daemon-driver-network
@@ -56,6 +60,7 @@ modules:
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
       - qemu-kvm
+      - fuse-sshfs
       - weechat
       - wl-clipboard
       - eza
