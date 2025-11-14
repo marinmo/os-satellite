@@ -45,7 +45,7 @@ modules:
       - fish
       - keychain
       - tmux
-      - virt-manager
+      - virt-manager # here starts virtualization stuff and not sure which can be removed and which should be kept, fml
       - virt-install
       - virt-top
       - virt-viewer
