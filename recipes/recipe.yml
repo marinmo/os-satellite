@@ -99,7 +99,6 @@ modules:
       - io.mpv.Mpv
       - org.darktable.Darktable
       - app.devsuite.Ptyxis
-      - io.github.swordpuffin.rewaita
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
