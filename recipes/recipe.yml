@@ -34,33 +34,35 @@ modules:
 
   - type: dnf
     repos:
-    cleanup: false
-    copr:
+      cleanup: false
+      copr:
       - atim/starship
       - alternateved/eza
       - monkeygold/nautilus-open-any-terminal
     install:
-    # terminal stuff
-      - starship
-      - fish
-      - keychain
-      - tmux
-      - eza
-      - nautilus-open-any-terminal
-    # sshfs
-      - fuse-sshfs
-    # misc
-      - gnome-tweaks
-      - weechat
-      - wl-clipboard
-      - opendoas
-      - tuned
+      packages:
+        # terminal stuff
+        - starship
+        - fish
+        - keychain
+        - tmux
+        - eza
+        - nautilus-open-any-terminal
+      # sshfs
+        - fuse-sshfs
+      # misc
+        - gnome-tweaks
+        - weechat
+        - wl-clipboard
+        - opendoas
+        - tuned
     remove:
-      - firefox # default firefox removed in favor of flatpak
-      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+      packages:
+        - firefox # default firefox removed in favor of flatpak
+        - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
     group-install:
-    packages:
-      - virtualization
+      packages:
+        - virtualization
 
   - type: script
     scripts:
