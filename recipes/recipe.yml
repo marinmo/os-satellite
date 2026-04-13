@@ -34,11 +34,11 @@ modules:
 
   - type: dnf
     repos:
-      cleanup: false
-      copr:
-        - atim/starship
-        - alternateved/eza
-        - monkeygold/nautilus-open-any-terminal
+    cleanup: false
+    copr:
+      - atim/starship
+      - alternateved/eza
+      - monkeygold/nautilus-open-any-terminal
     install:
     # terminal stuff
       - starship
@@ -59,8 +59,8 @@ modules:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
     group-install:
-      packages:
-        - virtualization
+    packages:
+      - virtualization
 
   - type: script
     scripts:
